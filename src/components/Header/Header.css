@@ -1,0 +1,36 @@
+.header{
+    background-color: #D8D9CF;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+}
+.logo .icon{
+    height: 30px;
+    width: 30px;
+}
+.header h3{
+    margin: 0 0 0 7px;
+    font-weight: 600;
+    color: #1F3442;
+}
+.link ul{
+    margin: 0;
+}
+.link li{
+    list-style-type: none;
+    display: inline-block;
+}
+.link a{
+    padding: 0 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .5s;
+}
+.link a:hover{
+    color: orangered;
+}
