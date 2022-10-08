@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './components/Layout/Main';
 import Home from './components/Home/Home';
 import About from './components/About/About';
+import Books from './components/Books/Books';
 
 function App() {
 
@@ -18,6 +19,11 @@ function App() {
         {
           path: '/home',
           element: <Home></Home>
+        },
+        {
+          path: '/books',
+          loader: () => fetch('https://api.itbook.store/1.0/new'),
+          element: <Books></Books>
         },
         {
           path: '/about',

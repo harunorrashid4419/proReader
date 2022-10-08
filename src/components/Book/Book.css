@@ -1,0 +1,42 @@
+.single-book{
+    box-shadow: 0px 5px 10px -7px #000000;
+    position: relative;
+}
+.single-book::before {
+    content: '';
+    position: absolute;
+    background: #000000b3;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: .7s;
+    border-radius: 10px;
+    opacity: 0;
+}
+.single-book:hover:before{
+    opacity: 1;
+}
+.single-book .content{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transition: .7s;
+    opacity: 0;
+}
+.single-book:hover.single-book .content{
+    opacity: 1;
+}
+.single-book .content h2{
+    color: white;
+    margin: 0;
+}
+.single-book .content h3{
+    color: white;
+    margin: 15px 0 0 0;
+    font-weight: 500;
+}
+.single-book .content p{
+    color: white;
+    font-size: 18px;
+}

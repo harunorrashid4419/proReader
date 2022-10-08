@@ -1,0 +1,6 @@
+.book-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 70px 50px;
+    grid-gap: 30px;
+}
