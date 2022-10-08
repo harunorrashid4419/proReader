@@ -4,8 +4,9 @@
     display: flex;
     justify-content: space-between;
 }
-.logo{
+.logo a{
     display: flex;
+    text-decoration: none;
 }
 .logo .icon{
     height: 30px;

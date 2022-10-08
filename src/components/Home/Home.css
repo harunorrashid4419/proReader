@@ -1,0 +1,58 @@
+.home-container{
+    padding: 50px 50px 25px 50px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+.content-container .top-header {
+    font-size: 14px;
+    background: #FACC15;
+    width: 65px;
+    padding: 2px 17px;
+    border-radius: 10px;
+}
+.content-container h3{
+    font-size: 40px;
+    margin: 0;
+    font-weight: 600;
+}
+.content-container .lives-header {
+    color: black;
+    font-size: 37px;
+    font-weight: 600;
+}
+.content-container span{
+    color: #60A5FA;
+}
+.content-container p {
+    color: #0000007d;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.content-container .button{
+    margin-top: 40px;
+}
+.content-container .visit-btn{
+    text-decoration: none;
+    background-color: #60A5FA;
+    padding: 12px 25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    transition: .5s;
+}
+.content-container .visit-btn:hover{
+    background-color: #1D4ED8;
+}
+.content-container .learn-btn{
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: .5s;
+}
+.content-container .learn-btn:hover{
+    color: #1D4ED8;
+}
