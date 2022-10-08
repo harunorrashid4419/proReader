@@ -2,6 +2,7 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './components/Layout/Main';
 import Home from './components/Home/Home';
+import About from './components/About/About';
 
 function App() {
 
@@ -18,6 +19,10 @@ function App() {
           path: '/home',
           element: <Home></Home>
         },
+        {
+          path: '/about',
+          element: <About></About>
+        }
       ],
     },
   ]);

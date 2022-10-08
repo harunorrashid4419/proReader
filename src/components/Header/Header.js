@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <nav className='header'>
             <div className="logo">
-                <a href='/home'>
+                <a href='/'>
                     <ViewfinderCircleIcon className='icon'></ViewfinderCircleIcon>
                     <h3>proReader</h3>
                 </a>

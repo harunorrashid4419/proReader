@@ -1,0 +1,36 @@
+.about-section{
+    padding: 50px;
+}
+.about-section .header-content{
+    text-align: center;
+}
+.about-section .header-content h1{
+    font-size: 36px;
+    line-height: 35px;
+}
+.about-section .header-content p {
+    font-size: 18px;
+    max-width: 670px;
+    margin: 0 auto;
+    line-height: 26px;
+    color: #1F3442;
+}
+.details-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 60px;
+    padding-top: 50px;
+}
+.details-section .content{
+    margin-bottom: 30px;
+}
+.details-section .content h2{
+    color: #1f3442;
+    font-weight: 600;
+    font-size: 24px;
+}
+.details-section .content p {
+    color: #1f3442;
+    font-weight: 400;
+    margin: 0;
+}
