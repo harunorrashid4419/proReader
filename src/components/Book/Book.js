@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Book.css';
 
 const Book = ({ book }) => {
-    const { title, image, price, subtitle } = book;
+    const { isbn13, title, image, price, subtitle } = book;
     return (
-        <a href="" className="single-book">
+        <Link to={`/books/${isbn13}`} className="single-book">
             <div>
                 <img src={image} alt="" />
             </div>
@@ -13,7 +14,7 @@ const Book = ({ book }) => {
                 <h3>{subtitle}</h3>
                 <p>Price: {price}</p>
             </div>
-        </a>
+        </Link>
     );
 };
 

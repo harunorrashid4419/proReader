@@ -1,9 +1,10 @@
 import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, useParams } from 'react-router-dom';
 import Main from './components/Layout/Main';
 import Home from './components/Home/Home';
 import About from './components/About/About';
 import Books from './components/Books/Books';
+import BookDetalis from './components/BookDetalis/BookDetalis';
 
 function App() {
 
@@ -28,7 +29,14 @@ function App() {
         {
           path: '/about',
           element: <About></About>
-        }
+        },
+        {
+          path: '/books/:postId',
+          loader: async ({params}) =>{
+            return fetch(`https://api.itbook.store/1.0/books/${params.postId}`)
+          },
+          element: <BookDetalis></BookDetalis>
+        },
       ],
     },
   ]);

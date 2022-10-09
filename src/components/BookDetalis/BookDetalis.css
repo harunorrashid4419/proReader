@@ -1,0 +1,77 @@
+.book-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 80px 150px;
+    gap: 30px;
+    border: 1px solid #00000030;
+    box-shadow: 0px 2px 6px 0px #000;
+}
+.book-details img{
+    width: 100%;
+}
+.book-details .content{
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+}
+.book-details .new{
+    margin: 0;
+    background: #2DD4BF;
+    max-width: 92px;
+    padding: 2px 10px;
+    border-radius: 13px;
+    color: blue;
+}
+.book-details h1{
+    color: black;
+    font-weight: 800;
+    font-size: 34px;
+}
+.book-details .description{
+    max-width: 370px;
+}
+.book-details .button{
+    display: flex;
+    margin-top: 30px;
+}
+.book-details .download-btn {
+    text-decoration: none;
+    background-color: #60A5FA;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 11px 22px;
+    border-radius: 6px;
+    margin-right: 25px;
+    transition: .5s;
+}
+.book-details .download-btn:hover{
+    background-color: #1D4ED8;
+}
+.book-details .button p{
+    color: blue;
+    font-weight: 400;
+    font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+    .book-details{
+        margin: 80px 50px;
+        gap: 0;
+    }
+}
+@media screen and (max-width: 992px) {
+    .book-details{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .book-details .content{
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 556px) {
+    .book-details .button {
+        display: block;
+    }
+    .book-details .button p{
+        margin-top: 30px;
+    }
+}

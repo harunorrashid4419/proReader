@@ -56,3 +56,16 @@
 .content-container .learn-btn:hover{
     color: #1D4ED8;
 }
+@media screen and (max-width: 992px) {
+    .home-container{
+        grid-template-columns: 1fr;
+        
+    }
+    .home-container .content-container{
+        order: 2;
+        margin-top: 30px;
+    }
+    .home-container .animation{
+        order: 1;
+    }
+}

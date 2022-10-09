@@ -17,14 +17,14 @@
     font-weight: 600;
     color: #1F3442;
 }
-.link ul{
+.NavLink ul{
     margin: 0;
 }
-.link li{
+.NavLink li{
     list-style-type: none;
     display: inline-block;
 }
-.link a{
+.NavLink a{
     padding: 0 20px;
     color: black;
     font-size: 18px;
@@ -32,6 +32,29 @@
     text-decoration: none;
     transition: .5s;
 }
-.link a:hover{
+.NavLink a:hover{
     color: orangered;
+}
+.style{
+    color: orangered !important;
+}
+.icon{
+    display: none;
+    width: 30px;
+    cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+    .NavLink li {
+        display: block;
+        padding: 7px 0;
+    }
+    .icon{
+        display: block;
+    }
+    .menu ul{
+        position: absolute;
+    }
+    .pos{
+        position: absolute;
+    }
 }
